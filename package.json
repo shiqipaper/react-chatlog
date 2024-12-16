@@ -10,12 +10,14 @@
     "lint": "eslint . --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "vitest --run",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "luxon": "^2.5.2",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "predeploy": "npm run build",
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
     "@eslint/compat": "^1.2.0",
